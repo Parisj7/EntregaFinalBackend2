@@ -35,9 +35,9 @@ public class SerieController {
         return ResponseEntity.ok().body(serieService.findByGenre(genre));
     }
 
-    @PostMapping("save")
+    @PostMapping()
     public ResponseEntity<Serie> saveSerie(@RequestBody Serie serie){
         log.info("se guardo la serie: ",serie.getName());
-        return ResponseEntity.ok().body(serieService.save(serie));
+        return ResponseEntity.ok().body(serieSender.send(serie));
     }
 }

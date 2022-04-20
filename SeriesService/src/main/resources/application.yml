@@ -1,5 +1,5 @@
 spring:
   application:
-    name: movie-service
+    name: series-service
   config:
     import: configserver:http://localhost:8888

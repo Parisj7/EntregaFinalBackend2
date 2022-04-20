@@ -11,7 +11,6 @@ import java.util.List;
 
 @Data
 @Builder
-@Document(collection = "Catalogo")
 @AllArgsConstructor
 @NoArgsConstructor
 public class CatalogWS {

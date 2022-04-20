@@ -10,7 +10,6 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-//@JsonIgnoreProperties(ignoreUnknown = true)
 @Document(collection = "MoviesCatalog")
 public class MovieWS {
     @Id
